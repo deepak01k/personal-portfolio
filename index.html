@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio of a passionate Computer Science Engineering student and Frontend Developer showcasing projects, skills, and resume.">
+    <title>Developer Portfolio | CSE Student & Frontend Developer</title>
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Mouse-Follow Glow Overlay -->
+    <div class="mouse-glow-bg" id="mouse-glow"></div>
+
+    <!-- Background Animated Orbs -->
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                MY Portfolio<span class="logo-dot"></span>
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="hamburger" id="hamburger-menu" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#resume" class="nav-link">Resume</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="container hero-grid">
+            <div class="hero-content reveal active">
+                <span class="hero-greeting">WELCOME TO MY PORTFOLIO</span>
+                <h1 class="hero-title">Hi, I'm <span>Deepak Yadav</span></h1>
+                <div class="hero-subtitle">
+                    I am a <span id="typing-text"></span><span class="typing-cursor"></span>
+                </div>
+                <p class="hero-description">
+                    A Computer Science Engineering student and passionate Web Developer. I build highly responsive, visually stunning web applications with polished user interfaces and seamless user experiences.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        View Projects <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="assets/documents/resume.pdf" class="btn btn-secondary" download="Alex_Mercer_Resume.pdf">
+                        Download Resume <i class="fa-solid fa-download"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-avatar-container reveal active">
+                <div class="avatar-wrapper">
+                    <div class="avatar-inner">
+                        <img src="assets/images/profile1.jpg" alt="Alex Mercer Profile Image">
+                    </div>
+                    <div class="avatar-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title reveal">About <span>Me</span></h2>
+            <div class="about-grid">
+                <div class="about-info glass-panel reveal">
+                    <h3>Who I Am</h3>
+                    <p>
+                        I am currently pursuing a Bachelor of Technology in Computer Science Engineering. My passion lies in frontend technologies and designing interactive web ecosystems. I combine logical problem-solving with creative web designs to build digital spaces that feel both fluid and powerful.
+                    </p>
+                    <p>
+                        My core objective is to secure a Frontend Developer internship where I can apply my engineering foundation and design principles to production-ready products, while collaborating with and learning from seasoned developers.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <h4><i class="fa-solid fa-code"></i> Engineering Focus</h4>
+                            <p>Algorithms, Data Structures, and clean software architectures.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4><i class="fa-solid fa-palette"></i> Design Vibe</h4>
+                            <p>Minimal layouts, rich micro-interactions, dark mode aesthetics.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-education reveal">
+                    <div class="edu-card glass-panel">
+                        <span class="edu-badge">2024 - Present</span>
+                        <div class="edu-university">Chaibasa Engineering College</div>
+                        <h4>B.Tech in Computer Science & Engineering</h4>
+                        <div class="edu-gpa">
+                            <i class="fa-solid fa-graduation-cap"></i> GPA: 7.35 / 10.0
+                        </div>
+                    </div>
+                    
+                    <div class="edu-card glass-panel">
+                        <span class="edu-badge">2021 - 2023</span>
+                        <div class="edu-university">C.N. Inter College,Bokaro</div>
+                        <h4>Advanced Physics, Chemistry & Math Stream</h4>
+                        <div class="edu-gpa">
+                            <i class="fa-solid fa-star"></i> Score: 82%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">Core <span>Skills</span></h2>
+            <div class="skills-grid">
+                
+                <!-- Skill: HTML -->
+                <div class="skill-card glass-panel reveal">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-html5" style="color: #e34f26;"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Semantic structures, SEO architecture, accessibility tags.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" data-percentage="95%"></div>
+                    </div>
+                    <div class="project-buttons" style="margin-top: 1rem;">
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                </div>
+
+                <!-- Skill: CSS -->
+                <div class="skill-card glass-panel reveal">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i>
+                    </div>
+                    <h3>CSS3 & SASS</h3>
+                    <p>Flexbox, CSS Grids, animations, custom keyframes, responsiveness.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" data-percentage="90%"></div>
+                    </div>
+                    <div class="project-buttons" style="margin-top: 1rem;">
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                </div>
+
+                <!-- Skill: JavaScript -->
+                <div class="skill-card glass-panel reveal">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
+                    </div>
+                    <h3>JavaScript (ES6+)</h3>
+                    <p>Asynchronous operations, DOM APIs, Intersection Observer, modular code.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" data-percentage="85%"></div>
+                    </div>
+                    <div class="project-buttons" style="margin-top: 1rem;">
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                </div>
+
+                <!-- Skill: Java -->
+                <div class="skill-card glass-panel reveal">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-java" style="color: #5382a1;"></i>
+                    </div>
+                    <h3>Java</h3>
+                    <p>Object-oriented paradigms, concurrency, and algorithm design.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" data-percentage="80%"></div>
+                    </div>
+                    <div class="project-buttons" style="margin-top: 1rem;">
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                </div>
+
+                <!-- Skill: C++ -->
+                <div class="skill-card glass-panel reveal">
+                    <div class="skill-icon">
+                        <code style="font-family: var(--font-heading); font-weight:800; color: #00599c;">C</code>
+                    </div>
+                    <h3>C Programming</h3>
+                    <p>Competitive programming, data structures, and memory safety layouts.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" data-percentage="75%"></div>
+                    </div>
+                    <div class="project-buttons" style="margin-top: 1rem;">
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                </div>
+
+                <!-- Skill: Git & GitHub -->
+                <div class="skill-card glass-panel reveal">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-github" style="color: #f05032;"></i>
+                    </div>
+                    <h3>Git & GitHub</h3>
+                    <p>Version control, branch management, actions, and collaborative workflow.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" data-percentage="88%"></div>
+                    </div>
+                    <div class="project-buttons" style="margin-top: 1rem;">
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title reveal">Featured <span>Projects</span></h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-card-inner glass-panel">
+                        <div class="project-img-box">
+                            <img src="assets/images/project1.png" alt="AI Analytics Dashboard">
+                            <div class="project-overlay">
+                                <a href="https://github.com" target="_blank" class="project-overlay-link" aria-label="Github Repo"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" target="_blank" class="project-overlay-link" aria-label="Live Demo"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tech">React & NLP Engine</span>
+                            <h3 class="project-title">AI Analytics Dashboard</h3>
+                            <p class="project-desc">
+                                A high-fidelity frontend dashboard tracking NLP accuracy and chatbot performance metrics. Integrates charting, glassmorphism UI, and real-time socket connections.
+                            </p>
+                            <div class="project-buttons">
+                                <a href="https://github.com" target="_blank" class="project-link-btn">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                                <a href="#" class="project-link-btn">
+                                    Demo <i class="fa-solid fa-arrow-trend-up"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal">
+                    <div class="project-card-inner glass-panel">
+                        <div class="project-img-box">
+                            <img src="assets/images/project2.png" alt="Crypto Portfolio Tracker">
+                            <div class="project-overlay">
+                                <a href="https://github.com" target="_blank" class="project-overlay-link" aria-label="Github Repo"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" target="_blank" class="project-overlay-link" aria-label="Live Demo"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tech">Vanilla JS & REST API</span>
+                            <h3 class="project-title">Crypto Tracker</h3>
+                            <p class="project-desc">
+                                An interactive web app utilizing public crypto APIs to display live asset evaluations, trends, and portfolio growth forecasts with dynamic responsive grid elements.
+                            </p>
+                            <div class="project-buttons">
+                                <a href="https://github.com" target="_blank" class="project-link-btn">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                                <a href="#" class="project-link-btn">
+                                    Demo <i class="fa-solid fa-arrow-trend-up"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal">
+                    <div class="project-card-inner glass-panel">
+                        <div class="project-img-box">
+                            <img src="assets/images/project3.png" alt="DevSpace Social Hub">
+                            <div class="project-overlay">
+                                <a href="https://github.com" target="_blank" class="project-overlay-link" aria-label="Github Repo"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" target="_blank" class="project-overlay-link" aria-label="Live Demo"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tech">HTML5, CSS3, ES6</span>
+                            <h3 class="project-title">DevSpace Social</h3>
+                            <p class="project-desc">
+                                A community hub layout for coders featuring interactive code snippet cards, challenge feeds, and elegant micro-interactions to foster team collaborations.
+                            </p>
+                            <div class="project-buttons">
+                                <a href="https://github.com" target="_blank" class="project-link-btn">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                                <a href="#" class="project-link-btn">
+                                    Demo <i class="fa-solid fa-arrow-trend-up"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- RESUME SECTION -->
+    <section class="section resume" id="resume">
+        <div class="container">
+            <h2 class="section-title reveal">Professional <span>Resume</span></h2>
+            <div class="resume-wrapper glass-panel reveal">
+                <div class="resume-icon">
+                    <i class="fa-solid fa-file-invoice"></i>
+                </div>
+                <h3>View & Download Resume</h3>
+                <p>
+                    Interested in hiring me or discussing an internship position? Download my fully detailed curriculum vitae below or view the preview placeholder.
+                </p>
+                
+                <!-- Resume Preview Card -->
+                <div class="resume-preview-card">
+                    <div class="resume-preview-content">
+                        <i class="fa-regular fa-file-pdf"></i>
+                        <span>Resume.pdf</span>
+                        <span class="file-info">File format: PDF | File Size: ~72 KB</span>
+                    </div>
+                </div>
+
+                <a href="assets/documents/resume.pdf" class="btn btn-primary" download="Alex_Mercer_Resume.pdf">
+                    Download CV <i class="fa-solid fa-cloud-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Get In <span>Touch</span></h2>
+            <div class="contact-grid">
+                
+                <div class="contact-info reveal">
+                    
+                    <!-- Email Method -->
+                    <div class="contact-method-card glass-panel">
+                        <div class="contact-method-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-method-text">
+                            <h4>Email Me</h4>
+                            <p>Deepakcec01@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Phone Method -->
+                    <div class="contact-method-card glass-panel">
+                        <div class="contact-method-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-method-text">
+                            <h4>Call Me</h4>
+                            <p>+91-9835215555</p>
+                        </div>
+                    </div>
+
+                    <!-- LinkedIn Method -->
+                    <div class="contact-method-card glass-panel">
+                        <div class="contact-method-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <div class="contact-method-text">
+                            <h4>LinkedIn</h4>
+                            <p>https://www.linkedin.com/in/deepak-yadav-134512238</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contact-form-container glass-panel reveal">
+                    <form id="contact-form" novalidate>
+                        
+                        <!-- Name Field -->
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-input" required>
+                            <label for="name" class="form-label">Full Name</label>
+                            <span class="form-feedback" id="name-error">Please enter your name.</span>
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" class="form-input" required>
+                            <label for="email" class="form-label">Email Address</label>
+                            <span class="form-feedback" id="email-error">Please enter a valid email address.</span>
+                        </div>
+
+                        <!-- Subject Field -->
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" class="form-input" required>
+                            <label for="subject" class="form-label">Subject</label>
+                            <span class="form-feedback" id="subject-error">Please specify a subject.</span>
+                        </div>
+
+                        <!-- Message Field -->
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-input" required></textarea>
+                            <label for="message" class="form-label">Your Message</label>
+                            <span class="form-feedback" id="message-error">Message cannot be empty.</span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary form-submit-btn">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+
+                        <div class="form-status-msg" id="form-status"></div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#hero" class="logo">
+                My Portfolio<span class="logo-dot"></span>
+            </a>
+            
+            <div class="footer-socials">
+                <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com" target="_blank" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github-alt"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://medium.com" target="_blank" class="social-icon" aria-label="Medium"><i class="fa-brands fa-medium"></i></a>
+            </div>
+            
+            <div class="footer-copyright">
+                <p>&copy; <span id="current-year"></span> Deepak Yadav. Built with passion & standard web stacks.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- JS Script -->
+    <script src="script.js"></script>
+</body>
+</html>
